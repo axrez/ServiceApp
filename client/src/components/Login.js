@@ -2,7 +2,17 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-class App extends Component {
+class Login extends Component {
+  constructor() {
+    super();
+    this.state = {
+      input: {
+        username: '',
+        password: '',
+      },
+    };
+  }
+
   render() {
     return (
       <div className="App">
@@ -11,8 +21,22 @@ class App extends Component {
           <h1 className="App-title">Login</h1>
         </header>
         <div className="Login-form">
-          <input className="Login-username" type="text" value="Username" />
-          <input className="Login-password" type="text" value="Password" />
+          <input
+            className="Login-username"
+            type="text"
+            placeholder="Username"
+            value={this.state.input.username}
+            onChange={this.handleChange}
+          />
+          <br />
+          <input
+            className="Login-password"
+            type="text"
+            placeholder="Password"
+            value={this.state.input.password}
+            onChange={this.handleChange}
+          />
+          <br />
           <button>
             Login
           </button>
@@ -22,4 +46,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Login;
