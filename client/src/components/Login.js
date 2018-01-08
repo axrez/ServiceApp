@@ -8,11 +8,15 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
+          <h1 className="App-title">Login</h1>
         </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <div className="Login-form">
+          <input className="Login-username" type="text" value="Username" />
+          <input className="Login-password" type="text" value="Password" />
+          <button>
+            Login
+          </button>
+        </div>
       </div>
     );
   }
