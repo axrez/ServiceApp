@@ -1,0 +1,12 @@
+.container {
+  max-height: 42px;
+  overflow-y: hidden;
+  transition: all;
+  transition-duration: 300ms;
+}
+
+.extended {
+  max-height: 100%;
+}
+
+
