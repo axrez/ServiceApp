@@ -3,7 +3,7 @@ import React, { Component } from "react";
 export default class AppBar extends Component {
   render() {
     return (
-      <div style={{ marginBottom: '70px' }} >
+      <div style={{ marginBottom: "70px" }}>
         <div
           className="Container"
           style={{
@@ -20,10 +20,38 @@ export default class AppBar extends Component {
             marginBottom: "70px"
           }}
         >
-          <h3 style={{ margin: "3%" }}>ZBC</h3>
+          <div
+            style={{
+              margin: "3%",
+              fontFamily: "Lato Bold, Tahoma, Geneva, Verdana, sans-serif",
+              fontSize: "1.5rem",
+              width: "50vw"
+            }}
+          >
+              <h3
+                style={{
+                  fontWeight: 500,
+                  margin: 0,
+                  display: "inline-block",
+                  color: "#1d1f24"
+                }}
+              >
+                ZBC
+              </h3>
+              <p
+                style={{
+                  margin: 0,
+                  display: "inline-block",
+                  fontSize: "1.3em",
+                  color: "#ff565c"
+                }}
+              >
+                .
+              </p>
+          </div>
           <i
-            className="material-icons md-36 "
-            style={{ margin: "3% 6%" }}
+            className="material-icons md-48"
+            style={{ margin: "3% 6%", fontSize: "36px" }}
             onClick={this.props.menuHandler}
           >
             menu

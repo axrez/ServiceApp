@@ -26,7 +26,7 @@ export default class ArticleThumb extends Component {
         <h4
           id="article-thumb"
           style={{
-            margin: "45% 0 0 2.6%",
+            margin: "45% 0 0 0.7rem",
             padding: "1.5% 4%",
             backgroundColor: "#ff565c",
             position: "absolute",

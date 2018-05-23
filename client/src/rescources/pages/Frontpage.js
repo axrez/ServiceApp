@@ -10,14 +10,15 @@ export default class Frontpage extends Component {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          backgroundColor: "#f9fafc"
+          backgroundColor: "#f9fafc",
+          maxWidth: '450px'
         }}
       >
         <ArticleThumb
           category={"elevrådet"}
-          title={"Elevrådsmøde d. 18-05-18"}
+          title={"Elevrådsmøde d. 22-05-18"}
           subheader={
-            "Se referatet fra elevrådsmødet der blev afhold d. 18 maj 2018"
+            "Se referatet fra elevrådsmødet der blev afhold d. 22 maj 2018"
           }
           img={"https://cdn.stocksnap.io/img-thumbs/960w/SD9TQOOKCR.jpg"}
         />
